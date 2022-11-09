@@ -168,9 +168,10 @@ To see the stack trace of this error execute with --v=5 or higher
 
 #Solution
 Run below commands
+```
   rm /etc/containerd/config.toml
   systemctl restart containerd
-  
+```  
   Then try Kubeadm join or Kubeadm init commands
 
 ---
