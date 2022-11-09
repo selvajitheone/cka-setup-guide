@@ -154,16 +154,6 @@ az group delete -n wriju --no-wait
 - Weaver [Installation](https://www.weave.works/docs/net/latest/kubernetes/kube-addon/)
 - CKA Exam [Curriculum](https://github.com/cncf/curriculum)
 
----
-
-Prepared and maintained by Wriju Ghosh for CKA Exam playground
-
-*Contribute*
-[https://github.com/wrijugh/cka-setup-guide](https://github.com/wrijugh/cka-setup-guide)
-
-Web [https://wrijugh.github.io/cka-setup-guide/](https://wrijugh.github.io/cka-setup-guide/)
-
-Tested as of *31-August-2021*
 
 ##Known issues and Solution
 #Issue
@@ -182,3 +172,16 @@ Run below commands
   systemctl restart containerd
   
   Then try Kubeadm join or Kubeadm init commands
+
+---
+
+Prepared and maintained by Wriju Ghosh for CKA Exam playground
+
+*Contribute*
+[https://github.com/wrijugh/cka-setup-guide](https://github.com/wrijugh/cka-setup-guide)
+
+Web [https://wrijugh.github.io/cka-setup-guide/](https://wrijugh.github.io/cka-setup-guide/)
+
+Tested as of *10-Nov-2022*
+
+
