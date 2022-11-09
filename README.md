@@ -164,3 +164,21 @@ Prepared and maintained by Wriju Ghosh for CKA Exam playground
 Web [https://wrijugh.github.io/cka-setup-guide/](https://wrijugh.github.io/cka-setup-guide/)
 
 Tested as of *31-August-2021*
+
+##Known issues and Solution
+#Issue
+Kubeadm join or Kubeadm init commands getting below errors
+  
+  error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR CRI]: container runtime is not running: output: E1109 05:16:55.235028   17733 remote_runtime.go:948] "Status from runtime service failed" err="rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+time="2022-11-09T05:16:55Z" level=fatal msg="getting status of runtime: rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+, error: exit status 1
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
+
+#Solution
+Run below commands
+  rm /etc/containerd/config.toml
+  systemctl restart containerd
+  
+  Then try Kubeadm join or Kubeadm init commands
